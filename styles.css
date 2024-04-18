@@ -56,6 +56,7 @@
 .article__range-bar {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   width: 100%;
   height: 8px;
@@ -68,8 +69,18 @@
 
 .article__range-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgba(106, 90, 205, 0.8);
+  outline: none;
+}
+
+.article__range-bar::-moz-slider-thumb {
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: white;
   border: 5px solid rgb(106, 90, 205, 0.8);
